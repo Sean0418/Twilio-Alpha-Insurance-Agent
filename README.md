@@ -170,7 +170,7 @@ Once the server is running, you can trigger an outbound call using an API client
 
 ## Post-Call Analysis
 
-After a call that was recorded concludes, the recording will automatically be processed by your configured Twilio Intelligence Service. The analysis results will be sent to the `/analysis-complete` endpoint and saved into the `calls.db` SQLite database.
+After a call that was recorded concludes, the recording will automatically be processed by your configured Twilio Intelligence Service. The analysis results will be sent to the `/analysis-complete` endpoint and saved into the `calls.db` Twilio console. 
 
 ## Demo Video
 
