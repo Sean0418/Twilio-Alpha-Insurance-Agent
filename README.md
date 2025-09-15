@@ -8,7 +8,7 @@ This project demonstrates a conversational AI agent built with Node.js, Twilio V
 - **Automated Outbound Calling:** Initiates calls programmatically via the Twilio Voice API.
 - **Real-time Interaction:** Uses WebSockets (Twilio ConversationRelay) for low-latency voice communication.
 - **Context Management:** Maintains conversation history and customer data for personalized interactions.
-- **Post-Call Analytics:** Integrates with Twilio Intelligence to analyze call recordings for sentiment, topics, and performance, storing insights in an SQLite database.
+- **Post-Call Analytics:** Integrates with Twilio Intelligence to analyze call recordings for sentiment, topics, and performance, storing insights in Twilio console.
 - **Graceful Handoff:** Includes logic to connect to a human agent if needed.
 
 ## Architecture
@@ -167,6 +167,14 @@ Once the server is running, you can trigger an outbound call using an API client
     }
     ```
 
+
 ## Post-Call Analysis
 
 After a call that was recorded concludes, the recording will automatically be processed by your configured Twilio Intelligence Service. The analysis results will be sent to the `/analysis-complete` endpoint and saved into the `calls.db` SQLite database.
+
+## Demo Video
+
+[![Watch the Demo Video](https://img.youtube.com/vi/4lhnb7YOQOA/hqdefault.jpg)](https://www.youtube.com/watch?v=4lhnb7YOQOA)
+
+
+
